@@ -9,8 +9,8 @@ import Navbar from '@/components/Layouts/Navbar.vue'
 
 export default {
   components: {
-    Navbar
-  }
+    Navbar,
+  },
 }
 </script>
 
