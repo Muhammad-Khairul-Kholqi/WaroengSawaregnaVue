@@ -1,214 +1,154 @@
 <template>
-    <div>
-        <div class="container_all_footer">
-            <br><br>
-            <div class="container_footer">
-                <div class="bag_kiri">
-                    <div class="kata_foto_footer">
-                        <div class="logo_footer">
-                            <img src="@/assets/img/logo.png" alt="logo">
-                        </div>
-                        <div class="kata_footer_kiri">
-                            <p>Chickengi Fire</p>
-                        </div>
-                    </div>
-                    <div class="alamat_footer">
-                        <p>Jl. Siliwangi, Benda,<br>Kec. Cicurug, Kabupaten<br>Sukabumi, Jawa Barat.</p>
-                    </div>
-                </div>
-                <div class="bag_tengah">
-                    <div class="title_tengah">
-                        <p>Kontak Kami</p>
-                        <hr color="#F79327" size="3" width="150px">
-                    </div>
-                    <div class="telepon_tengah">
-                        <p><img src="foto/telephone.png"></p>
-                        <p>Telepon<br>-</p>
-                    </div>
-                    <div class="whatsapp_tengah">
-                        <p><img src="foto/whatsapp.png"></p>
-                        <p>whatsapp<br>-</p>
-                    </div>
-                </div>
-                <div class="bag_kanan">
-                    <div class="title_kanan">
-                        <p>Media Sosial</p>
-                        <hr color="#F79327" size="3" width="160px">
-                    </div>
-                    <div class="pembungkus_ig_fb">
-                        <div class="instagram">
-                            <a href="https://www.instagram.com/smpnegeri_2_cicurug/"><img src="foto/instagram.png"></a>
-                            <p><a href="https://www.instagram.com/smpnegeri_2_cicurug/">instagram</a></p>
-                        </div>
-                        <div class="facebook">
-                            <a href="https://www.facebook.com/profile.php?id=100064772691499&locale=ms_MY"><img
-                                    src="foto/facebook.png"></a>
-                            <p><a href="https://www.facebook.com/profile.php?id=100064772691499&locale=ms_MY">Facebook</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="all-footer">
+        <div class="footer-top">
+            <div class="logo">
+                <img src="@/assets/img/logo.png">
             </div>
-            <br><br>
+            <div class="title">
+                <p>Chicken Fire</p>
+            </div>
         </div>
-        <!-- copyright -->
-        <div class="penutupan">
-            <br>
-            <center>
-                <div class="title_penutup">
-                    <p>2023 - Chicken Fire</p>
-                </div>
-            </center>
-            <br>
+        <hr>
+        <div class="footer-bottom">
+            <div class="menu">
+                <p>Service</p>
+                <p>Support</p>
+                <p>Category</p>
+                <p>Join Us</p>
+            </div>
+            <div class="sosmed">
+                <img src="@/assets/img/facebook.png">
+                <img src="@/assets/img/instagram.png">
+                <img src="@/assets/img/github.png">
+            </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>© Chicken Fire - 2023 by Khairul Kholqi</p>
     </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@500&family=Roboto+Slab:wght@500&family=Rowdies:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
-.container_all_footer {
-    background-color: #272727;
+template {
+    margin: 0;
+    padding: 0;
 }
 
-.container_footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5px 12%;
-}
-
-.bag_kiri {
+.all-footer {
+    background-color: #EEEFF1;
     display: block;
 }
 
-.kata_foto_footer {
+.footer-top {
     display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.logo_footer img {
-    width: 80px;
-    margin-bottom: 30px;
+.logo img {
+    width: 60px;
 }
 
-.kata_footer_kiri p {
+.title p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
     font-size: 25px;
-    margin-left: 10px;
-    font-family: ''Inter', sans-serif';
-    font-weight: bold;
-    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
 
-.alamat_footer p {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
-    margin-left: 10px;
+.menu p {
+    padding: 0 50px 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
-.bag_tengah {
-    display: block;
+.menu p:hover {
+    text-decoration: underline;
 }
 
-.title_tengah p {
-    font-family: 'Inter', sans-serif;
-    font-size: 23px;
-    color: #ffffff;
-}
-
-.telepon_tengah {
+.sosmed {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.telepon_tengah img {
+.sosmed img {
+    cursor: pointer;
     width: 30px;
+    margin: 30px 50px 30px 50px;
 }
 
-.telepon_tengah p {
-    color: #ffffff;
-    margin-left: 15px;
-    line-height: 1.4;
-}
-
-.whatsapp_tengah {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.whatsapp_tengah img {
-    width: 35px;
-}
-
-.whatsapp_tengah p {
-    color: #ffffff;
-    margin-left: 15px;
-    line-height: 1.4;
-}
-
-.bag_kanan {
-    display: block;
-}
-
-.title_kanan p {
-    font-family: 'Inter', sans-serif;
-    font-size: 23px;
-    color: #ffffff;
-}
-
-.instagram {
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 3;
-}
-
-.instagram p {
-    margin-top: -10px;
-}
-
-.instagram p a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.instagram img {
-    width: 40px;
-}
-
-.facebook {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.facebook img {
-    width: 40px;
-}
-
-.facebook p a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.pembungkus_ig_fb {
+hr {
+    width: 400px;
+    height: 1px;
+    opacity: 100%;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
-/* copyright */
-.penutupan {
-    background-color: #000;
+.copyright {
+    background-color: #273443;
 }
 
-.title_penutup p {
-    color: #ffffff;
-    font-size: 20px;
+.copyright p {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 10px 0 10px 0;
+    margin-bottom: 0;
+}
+
+.sosmed img:hover {
+    filter: drop-shadow(0px 0px 2px #000);
+}
+
+@media screen and (max-width: 630px) {
+    .menu p{
+        padding: 0 30px 0 30px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+    
+    .title p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .menu p{
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .menu p{
+        padding: 0 10px 0 10px;
+        font-size: 12px;
+    }
+
+    .sosmed img {
+        width: 25px;
+        margin: 20px 10px 20px 10px;
+    }
+
+     hr {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    hr {
+        width: 200px;
+    }
 }
 </style>
